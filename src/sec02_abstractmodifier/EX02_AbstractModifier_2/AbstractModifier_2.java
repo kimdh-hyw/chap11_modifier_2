@@ -1,25 +1,20 @@
 package sec02_abstractmodifier.EX02_AbstractModifier_2;
 
-//추상클래스/추상메서드 사용하는 경우 
+/*추상클래스를 상속하여 오버라이딩 수행*/
+
 abstract class Animal {
 	abstract void cry();
 }
-
 class Cat extends Animal {
 	void cry() {
 		System.out.println("야옹");
 	}
 }
-
 class Dog extends Animal {
 	void cry() {
 		System.out.println("멍멍");
 	}
 }
-
-//abstract class B {
-//	void bcd() {}
-//}
 
 public class AbstractModifier_2 {
 	public static void main(String[] args) {
@@ -32,3 +27,4 @@ public class AbstractModifier_2 {
 		animal2.cry(); //멍멍
 	}
 }
+
